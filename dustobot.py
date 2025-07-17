@@ -26,6 +26,8 @@ class Events(commands.Cog):
     
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# Command for syncing commands on runtime
+
 """class Sync(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -393,7 +395,7 @@ class Music(commands.Cog):
     
     @commands.command(name="join", aliases=["connect", "Join", "Connect", "j", "J"])
     async def join_command(self, ctx: commands.Context, channel: typing.Optional[discord.VoiceChannel]):
-        if (ctx.author.id == 330308326758023169):
+        if (ctx.author.id == 00000000000000):
             if ctx.author.voice is None:
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             
@@ -428,7 +430,7 @@ class Music(commands.Cog):
 
     @commands.command(name="ff", aliases=["FF", "FastForward", "fastForward", "Fastforward", "fastforward", "fF", "Ff"])
     async def fast_forward(self, ctx: commands.Context, seconds):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -452,7 +454,7 @@ class Music(commands.Cog):
 
     @commands.command(name="gb", aliases=["GB", "gB", "Gb", "GoBack", "goBack", "Goback", "goback"])
     async def go_back(self, ctx: commands.Context, seconds):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -476,7 +478,7 @@ class Music(commands.Cog):
 
     @commands.command(name="seek", aliases=["Seek", "tp", "Tp", "tP", "TP", "goto", "Goto", "GoTo", "goTo"])
     async def seek_command(self, ctx: commands.Context, minute: str=""):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             node = wavelink.NodePool.get_node()
             player = node.get_player(ctx.guild.id)
             
@@ -528,7 +530,7 @@ class Music(commands.Cog):
 
     @commands.command(name="clear", aliases=["Clear", "cl", "Cl", "CL", "cL", "CLS", "Cls", "cls"])
     async def clear_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000) or (ctx.channel.id == 00000000000000) or (ctx.channel.id == 879178001500221449):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -546,7 +548,7 @@ class Music(commands.Cog):
 
     @commands.command(name="remove", aliases=["Remove", "rm", "RM", "Rm", "rM"])
     async def remove_command(self, ctx: commands.Context, index: str="-1"):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -584,7 +586,7 @@ class Music(commands.Cog):
         
     @commands.command(name="play", aliases=["p", "Play", "P"])
     async def play_command(self, ctx: commands.Context, *, search: str=""):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if ctx.author.voice is None:
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             
@@ -770,7 +772,7 @@ class Music(commands.Cog):
 
     @commands.command(name="loop", aliases=["Loop"])
     async def loop_command(self, ctx: commands.Command, mode: str=""):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -817,7 +819,7 @@ class Music(commands.Cog):
 
     @commands.command(name="stop", aliases=["Stop"])
     async def stop_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             node = wavelink.NodePool.get_node()
             player = node.get_player(ctx.guild.id)
 
@@ -841,7 +843,7 @@ class Music(commands.Cog):
 
     @commands.command(name="pause", aliases=["Pause"])
     async def pause_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -869,7 +871,7 @@ class Music(commands.Cog):
 
     @commands.command(name="resume", aliases=["Resume"])
     async def resume_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -910,7 +912,7 @@ class Music(commands.Cog):
 
     @commands.command(name="shuffle", aliases=["Shuffle"])
     async def shuffle_playlist(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -930,7 +932,7 @@ class Music(commands.Cog):
 
     @commands.command(name="nowplaying", aliases=["now_playing", "np", "NowPlaying", "Nowplaying", "nowPlaying", "NP"])
     async def now_playing_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449) or (ctx.channel.id == 879178001307299849):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -980,7 +982,7 @@ class Music(commands.Cog):
 
     @commands.command(name="search", aliases=["Search"])
     async def search_command(self, ctx: commands.Context, *, search: str):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             
@@ -1048,7 +1050,7 @@ class Music(commands.Cog):
 
     @commands.command(name="skip", aliases=["Skip", "sk", "Sk", "SK", "sK"])
     async def skip_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -1091,7 +1093,7 @@ class Music(commands.Cog):
 
     @commands.command(name="queue", aliases=["q", "Queue", "Q"])
     async def queue_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             node = wavelink.NodePool.get_node()
             player = node.get_player(ctx.guild.id)
 
@@ -1115,7 +1117,7 @@ class Music(commands.Cog):
     
     @commands.command(name="restart", aliases=["Restart", "reset", "Reset", "replay", "Replay"])
     async def restart_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -1133,7 +1135,7 @@ class Music(commands.Cog):
 
     @commands.command(name="move", aliases=["Move"])
     async def move_command(self, ctx: commands.Context, number1: str=None, number2: str=None):
-        if (ctx.channel.id == 879178001873502262) or (ctx.channel.id == 1062431294300094679) or (ctx.channel.id == 879178001500221449):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             if (ctx.author.voice == None):
                 return await ctx.reply(embed=discord.Embed(title="You need to be in a voice channel to use this command", color=discord.Color.from_rgb(255, 255, 255)))
             elif ctx.voice_client==None:
@@ -1429,7 +1431,7 @@ class NekosAPI(commands.Cog):
     
     @commands.command(name="wallpaper", aliases=["Wallpaper"])
     async def wallpaper_command(self, ctx: commands.Context):
-        if (ctx.channel.id == 879178002049691679) or (ctx.channel.id == 881226471589425184) or (ctx.channel.id == 879178002049691681):
+        if (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000) or (ctx.channel.id == 0000000000000):
             return await ctx.send(nekos.img(target="wallpaper"))
         else:
             return await ctx.reply(embed=discord.Embed(title="", description="Whoops, looks like you can't use this here. Try using it in <#879178001873502262>", color=discord.Color.from_rgb(255, 255, 255)))

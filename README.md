@@ -6,20 +6,4 @@ Some of the features include a music player. It also sends GIFs, images and more
 
 Thanks for your patience.
 
-Dependencies (sorry, I don't remember the versions so instead of making a `requirements.txt` file I'll display them here):
-
-- os
-- discord.py
-- dotenv
-- random
-- help
-- asyncio
-- typing
-- wavelink
-- paints
-- videos
-- nekos
-- spotipy
-- requests
-- pandas
-- itertools
+Sorry, I don't remember the versions of the depencies so I won't specify them in the `requirements.txt` file
