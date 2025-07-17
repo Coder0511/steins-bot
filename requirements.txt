@@ -1,0 +1,8 @@
+os
+discord.py
+dotenv
+wavelink
+nekos
+spotipy
+requests
+pandas
